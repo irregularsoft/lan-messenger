@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/irregularsoft/lan-messenger/issues"
   },
-  "homepage": "https://github.com/irregularsoft/lan-messenger"
+  "homepage": "https://github.com/irregularsoft/lan-messenger",
+  "dependencies": {
+    "express": "^4.6.1"
+  }
 }
