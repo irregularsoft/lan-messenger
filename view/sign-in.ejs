@@ -10,16 +10,28 @@
 <header class="row">
     <h1 class="page-header">Sign in</h1>
 </header>
+<%
+if(!isDirect) {
+%>
+<div class="row">
+    <div class="col-md-12 alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <strong>Error!</strong>&nbsp;Incorrect&nbsp;name&nbsp;or&nbsp;password.
+    </div>
+</div>
+<%
+}
+%>
 <div class="row">
     <section class="col-md-offset-4 col-md-4 well">
-        <form role="form">
+        <form action="sign-in" method="post" role="form">
             <div class="form-group">
                 <label for="name" class="control-label">Name</label>
-                <input type="text" placeholder="Enter name" id="name" class="form-control">
+                <input name="name" type="text" placeholder="Enter name" id="name" class="form-control">
             </div>
             <div class="form-group">
                 <label for="password" class="control-label">Password</label>
-                <input type="password" placeholder="Enter password" id="password" class="form-control">
+                <input name="password" type="password" placeholder="Enter password" id="password" class="form-control">
             </div>
             <button type="submit" class="btn btn-primary pull-right">Sign in</button>
             <div class="clearfix"></div>
