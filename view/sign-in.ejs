@@ -11,7 +11,7 @@
     <h1 class="page-header">Sign in</h1>
 </header>
 <%
-if(!isDirect) {
+if(model.isIncorrectNameOrPassword) {
 %>
 <div class="row">
     <div class="col-md-12 alert alert-danger alert-dismissible" role="alert">
