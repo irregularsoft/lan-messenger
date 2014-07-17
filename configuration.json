@@ -1,5 +1,8 @@
 {
     "listen": {
         "port": 8080
+    },
+    "session": {
+        "maxage": 86400
     }
 }
