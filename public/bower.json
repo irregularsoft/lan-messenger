@@ -1,0 +1,17 @@
+{
+  "name": "lan-messenger",
+  "version": "0.0.0",
+  "homepage": "https://github.com/irregularsoft/lan-messenger",
+  "authors": [],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
