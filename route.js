@@ -1,5 +1,5 @@
-var direct = require('./route/direct');
-var signIn = require('./route/sign-in');
+var direct = require('./controller/direct');
+var signIn = require('./controller/sign-in');
 
 module.exports = function (app) {
     app.get('/sign-in', direct({path: __dirname + '/view/sign-in'}));
